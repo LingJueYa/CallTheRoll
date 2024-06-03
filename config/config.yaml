@@ -1,0 +1,15 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+log:
+  output:
+    - "stdout"
+  errOutput:
+    - "stderr"
+  # 规范需要符合 zap 日志库的 zapcore.ParseLevel 的规范
+  level: "warn"
+
+database:
+  driver: "sqlite"
+  source: "attendance.db"
